@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h1>Image Gallery</h1>
+
+  <div class="controls">
+    <input
+      type="text"
+      id="searchInput"
+      placeholder="Search images..."
+      aria-label="Search images"
+    />
+    <button id="themeToggle" aria-label="Toggle theme">🌙</button>
+  </div>
+
+  <div class="categories">
+    <button class="active" data-category="All" tabindex="0">
+      <span class="short">A</span><span class="full">All</span>
+    </button>
+    <button data-category="Nature" tabindex="0">
+      <span class="short">N</span><span class="full">Nature</span>
+    </button>
+    <button data-category="Travel" tabindex="0">
+      <span class="short">T</span><span class="full">Travel</span>
+    </button>
+    <button data-category="Food" tabindex="0">
+      <span class="short">F</span><span class="full">Food</span>
+    </button>
+    <button data-category="People" tabindex="0">
+      <span class="short">P</span><span class="full">People</span>
+    </button>
+    <button data-category="Architecture" tabindex="0">
+      <span class="short">A</span><span class="full">Architecture</span>
+    </button>
+  </div>
+
+  <div id="gallery" class="gallery"></div>
+  <p id="empty" class="empty">No images found</p>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
